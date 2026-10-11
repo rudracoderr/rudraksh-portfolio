@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <rect width="180" height="180" rx="36" fill="#1B140C"/>
+  <defs>
+    <radialGradient id="appleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F0A12B" stop-opacity="0.3"/>
+      <stop offset="90%" stop-color="#1B140C" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#120C06" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="appleBezel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5C4226"/>
+      <stop offset="50%" stop-color="#3D2B1C"/>
+      <stop offset="100%" stop-color="#1B140C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- CRT Monitor Outer Bezel -->
+  <rect x="22" y="22" width="136" height="110" rx="18" fill="url(#appleBezel)" stroke="#7A5632" stroke-width="4"/>
+
+  <!-- Screen Bezel Inset -->
+  <rect x="34" y="32" width="112" height="86" rx="12" fill="#120C06" stroke="#2B1D12" stroke-width="3"/>
+
+  <!-- Glowing Phosphor Cathode Screen -->
+  <rect x="38" y="36" width="104" height="78" rx="8" fill="url(#appleGlow)"/>
+
+  <!-- Terminal Prompt >_ -->
+  <path d="M 52 58 L 72 75 L 52 92" fill="none" stroke="#F0A12B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="82" y="82" width="26" height="10" rx="2" fill="#F0A12B"/>
+
+  <!-- Power LED Indicator -->
+  <circle cx="128" cy="122" r="4" fill="#00FF88"/>
+
+  <!-- Monitor Pedestal Stand -->
+  <path d="M 70 132 L 65 148 L 115 148 L 110 132 Z" fill="#3D2B1C" stroke="#5C4226" stroke-width="3"/>
+  <rect x="52" y="148" width="76" height="10" rx="4" fill="#2E2115" stroke="#5C4226" stroke-width="3"/>
+</svg>

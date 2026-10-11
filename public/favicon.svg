@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- CRT Phosphor Screen Amber Glow -->
+    <radialGradient id="crtGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F0A12B" stop-opacity="0.25"/>
+      <stop offset="85%" stop-color="#1B140C" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#120C06" stop-opacity="1"/>
+    </radialGradient>
+    <!-- Outer Bezel Metallic Gradient -->
+    <linearGradient id="bezelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5C4226"/>
+      <stop offset="50%" stop-color="#3D2B1C"/>
+      <stop offset="100%" stop-color="#1B140C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- CRT Monitor Outer Bezel -->
+  <rect x="4" y="4" width="56" height="46" rx="8" fill="url(#bezelGrad)" stroke="#7A5632" stroke-width="2"/>
+
+  <!-- Screen Bezel Inset -->
+  <rect x="9" y="8" width="46" height="36" rx="5" fill="#120C06" stroke="#2B1D12" stroke-width="1.5"/>
+
+  <!-- Glowing Phosphor Cathode Screen -->
+  <rect x="11" y="10" width="42" height="32" rx="3" fill="url(#crtGlow)"/>
+
+  <!-- Horizontal Scanlines on Screen -->
+  <line x1="11" y1="14" x2="53" y2="14" stroke="#F0A12B" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="11" y1="18" x2="53" y2="18" stroke="#F0A12B" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="11" y1="22" x2="53" y2="22" stroke="#F0A12B" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="11" y1="26" x2="53" y2="26" stroke="#F0A12B" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="11" y1="30" x2="53" y2="30" stroke="#F0A12B" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="11" y1="34" x2="53" y2="34" stroke="#F0A12B" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="11" y1="38" x2="53" y2="38" stroke="#F0A12B" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Retro Prompt Symbol >_ -->
+  <path d="M 17 19 L 25 26 L 17 33" fill="none" stroke="#F0A12B" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Blinking Terminal Block Cursor -->
+  <rect x="29" y="29" width="10" height="4" rx="0.5" fill="#F0A12B"/>
+
+  <!-- Power LED Indicator (Green Phosphor Dot) -->
+  <circle cx="51" cy="46" r="1.8" fill="#00FF88"/>
+
+  <!-- Monitor Pedestal Stand -->
+  <path d="M 24 50 L 22 56 L 42 56 L 40 50 Z" fill="#3D2B1C" stroke="#5C4226" stroke-width="1.5"/>
+  <!-- Monitor Base Foot -->
+  <rect x="18" y="56" width="28" height="4" rx="1.5" fill="#2E2115" stroke="#5C4226" stroke-width="1.5"/>
+</svg>
